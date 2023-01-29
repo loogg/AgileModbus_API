@@ -1,0 +1,3 @@
+[submodule "agile_modbus"]
+	path = agile_modbus
+	url = https://github.com/loogg/agile_modbus.git
