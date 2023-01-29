@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.2"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Agile Modbus: 更新记录</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -25,7 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Agile Modbus<span id="projectnumber">&#160;1.1.2</span>
+   <div id="projectname">Agile Modbus
+   &#160;<span id="projectnumber">1.1.2</span>
    </div>
    <div id="projectbrief">Lightweight modbus protocol stack.</div>
   </td>
@@ -34,22 +35,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.2 -->
+<!-- 制作者 Doxygen 1.9.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','搜索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -63,8 +63,8 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md__d___agile_packages_agile_modbus__change_log.html',''); initResizable(); });
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md__home_runner_work__agile_modbus__a_p_i__agile_modbus__a_p_i_agile_modbus__change_log.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -82,38 +82,39 @@ $(document).ready(function(){initNavTree('md__d___agile_packages_agile_modbus__c
 </iframe>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">更新记录 </div></div>
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">更新记录 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
 Agile Modbus 1.1.0 发布</h1>
 <h2><a class="anchor" id="autotoc_md2"></a>
 新功能</h2>
-<p >2021-12-02：马龙伟</p>
+<p>2021-12-02：马龙伟</p>
 <ul>
 <li>增加 Doxygen 注释，生成文档</li>
 </ul>
-<p >2021-12-28：马龙伟</p>
+<p>2021-12-28：马龙伟</p>
 <ul>
 <li>增加 RTU 和 TCP 主机例子</li>
 <li>增加 RTU 和 TCP 从机例子</li>
 <li>增加示例文档</li>
 </ul>
-<p >2022-01-08：马龙伟</p>
+<p>2022-01-08：马龙伟</p>
 <ul>
 <li>增加 RTU 点对点传输文件例子</li>
 <li>增加 RTU 广播传输文件例子</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md3"></a>
 修改</h2>
-<p >2022-01-06：马龙伟</p>
+<p>2022-01-06：马龙伟</p>
 <ul>
 <li>修改从机例子，RTU 和 TCP 使用同一个从机回调</li>
 <li>TCP 从机支持最大 5 个客户端接入</li>
 <li>TCP 从机 10s 内未收到正确报文主动断开</li>
 </ul>
-<p >2022-01-08：马龙伟</p>
+<p>2022-01-08：马龙伟</p>
 <ul>
 <li>去除接收数据判断中长度限制</li>
 <li>去除 <code>agile_modbus_serialize_raw_request</code> 对于原始数据的长度限制</li>
@@ -122,7 +123,7 @@ Agile Modbus 1.1.0 发布</h1>
 Agile Modbus 1.1.1 发布</h1>
 <h2><a class="anchor" id="autotoc_md5"></a>
 修改</h2>
-<p >2022-06-22：马龙伟</p>
+<p>2022-06-22：马龙伟</p>
 <ul>
 <li>README.md 增加在 AT32F437 上基于 RT-Thread 实现的支持 Modbus 固件升级的 Bootloader 链接</li>
 <li>增加 HPM6750_Boot 链接</li>
@@ -132,13 +133,13 @@ Agile Modbus 1.1.1 发布</h1>
 Agile Modbus 1.1.2 发布</h1>
 <h2><a class="anchor" id="autotoc_md7"></a>
 新功能</h2>
-<p >2022-07-28：马龙伟</p>
+<p>2022-07-28：马龙伟</p>
 <ul>
 <li>提供简易从机接入 <code>agile_modbus_slave_util_callback</code> 接口</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md8"></a>
 修改</h2>
-<p >2022-07-28：马龙伟</p>
+<p>2022-07-28：马龙伟</p>
 <ul>
 <li><code>agile_modbus_slave_handle</code> 增加 <code>从机回调私有数据</code> 参数</li>
 <li><code>agile_modbus_slave_callback_t</code> 增加 <code>私有数据</code> 参数</li>
@@ -148,7 +149,7 @@ Agile Modbus 1.1.2 发布</h1>
 Agile Modbus 1.1.3 发布</h1>
 <h2><a class="anchor" id="autotoc_md10"></a>
 修改</h2>
-<p >2022-11-22：马龙伟</p>
+<p>2022-11-22：马龙伟</p>
 <ul>
 <li><code>agile_modbus_slave_handle</code> 中写单个寄存器将 <code>slave_info.buf</code> 指针指向局部变量地址，开启编译器优化后该地址被其他变量使用。修改为指向函数内全局变量地址。 </li>
 </ul>
@@ -158,7 +159,7 @@ Agile Modbus 1.1.3 发布</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
