@@ -1,0 +1,38 @@
+name: doxygen
+on:
+  # Runs at 16:00 UTC (BeiJing 00:00) on the 1st of every month
+  schedule:
+    - cron:  '0 16 30 * *'
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: doxygen_doc generate
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+      - name: Install Tools
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get -qq install doxygen graphviz
+      - name: generat doxygen html
+        shell: bash
+        run: |
+          ls
+          cd agile_modbus/doc/doxygen
+          doxygen Doxyfile
+          cd ../../../
+          ls
+          rm docs -rf
+          mv agile_modbus/doc/doxygen/output docs
+          git status .
+      - name: Push to GitHub
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "🎆 docs:  Update new html"
