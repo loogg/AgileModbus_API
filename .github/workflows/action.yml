@@ -16,6 +16,10 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: 'recursive'
+      - name: update submodules
+        shell: bash
+        run: |
+          git submodule update --remote
       - name: Install Tools
         shell: bash
         run: |
